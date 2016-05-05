@@ -1,0 +1,85 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ced.restobook.fragment.ProximityPlaceFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@color/primary_color">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/proximity_place_rayon_label_adresse"
+                android:textColor="@color/text_icons"/>
+
+            <EditText
+                android:id="@+id/proximity_place_rayon_edit_adresse"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_icons"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@color/primary_color">
+
+            <TextView
+                android:id="@+id/proximity_place_rayon_titre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/proximity_rayon_titre"
+                android:textColor="@color/text_icons"/>
+
+            <SeekBar
+                android:id="@+id/proximity_place_rayon_bar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"/>
+
+            <ImageButton
+                android:id="@+id/proximity_place_rayon_bouton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_location_on_black_24dp"
+                android:text="Ok"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/proximity_place_progress_bar_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/proximity_place_progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/proximity_place_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,67 @@
+<resources>
+
+    <!-- Nom application -->
+    <string name="app_name">Resto\'Book</string>
+
+    <!-- Sections -->
+    <string name="section_acceuil">Acceuil</string>
+    <string name="section_mes_resto">Mes restaurants</string>
+    <string name="section_nouveau_resto">Ajouter un restaurant</string>
+    <string name="section_proximite">Autour de moi</string>
+    <string name="section_proximite_place">Proche de</string>
+    <string name="section_detail_resto">Détail restaurant</string>
+    <string name="section_edit_resto">Editer restaurant</string>
+
+
+    <!-- Titre du Drawer -->
+    <string name="drawer_title">Menu</string>
+
+    <!-- Info drawer open/close -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <!-- Acceuil -->
+    <string name="acceuil_text_restaurant">Restaurants ajoutés :</string>
+
+    <!-- Label mes restaurants -->
+    <string name="my_restos_spinner_titre">Rangé par :</string>
+
+    <!-- Items array spinner my restaurants order by -->
+    <string name="my_restos_spinner_nom">Nom</string>
+    <string name="my_restos_spinner_note">Note</string>
+    <string name="my_restos_spinner_date">Date d\'ajout</string>
+    <string name="my_restos_spinner_distance">Distance</string>
+    
+    <!-- Label detail restaurant -->
+    <string name="detail_resto_label_nom">Nom :</string>
+    <string name="detail_resto_label_adresse">Adresse :</string>
+    <string name="detail_resto_label_site_web">Site web :</string>
+    <string name="detail_resto_label_telephone">Telephone :</string>
+    <string name="detail_resto_label_commentaire">Commentaire :</string>
+    <string name="detail_resto_date_ajout">Ajouté le</string>
+    <string name="detail_resto_label_photo">Photo :</string>
+
+    <!-- Proximity label -->
+    <string name="proximity_rayon_titre">Distance :</string>
+    <string name="proximity_place_rayon_label_adresse">Lieu :</string>
+    <string name="proximity_row_nouveau">Nouveau</string>
+
+    <!-- Buttons -->
+    <string name="button_edit">Editer</string>
+    <string name="button_delete">Supprimer</string>
+    <string name="button_add">Ajouter</string>
+    <string name="button_maps">Maps</string>
+    <string name="button_street_view">StreetView</string>
+    <string name="button_new_photo">Prendre photo</string>
+    <string name="button_replace_photo">Changer photo</string>
+
+    <!-- Autres -->
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="test">Test String</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+</resources>

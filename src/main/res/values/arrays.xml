@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="navigation_array">
+        <item>@string/section_acceuil</item>
+        <item>@string/section_mes_resto</item>
+        <item>@string/section_proximite</item>
+        <item>@string/section_proximite_place</item>
+    </string-array>
+
+    <string-array name="my_restos_orderby_spinner">
+        <item>@string/my_restos_spinner_nom</item>
+        <item>@string/my_restos_spinner_note</item>
+        <item>@string/my_restos_spinner_date</item>
+        <item>@string/my_restos_spinner_distance</item>
+    </string-array>
+
+</resources>

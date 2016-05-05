@@ -1,0 +1,72 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ced.restobook.fragment.MesRestaurantsFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@color/primary_color">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/my_restos_spinner_titre"
+                android:textColor="@color/text_icons"/>
+
+            <Spinner
+                android:id="@+id/my_restos_orderby_spinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"/>
+
+            <ImageButton
+                android:id="@+id/my_restos_orderby_up_down_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_drop_up_black_24dp"/>
+
+            <ImageButton
+                android:id="@+id/my_restos_orderby_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_check_black_24dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/my_restos_progress_bar_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/my_restos_progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/my_restos_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/light_primary_color"
+            android:divider="@color/divider_color"
+            android:dividerHeight="2px"/>
+
+    </LinearLayout>
+
+</FrameLayout>

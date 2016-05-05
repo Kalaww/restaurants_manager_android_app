@@ -1,0 +1,253 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ced.restobook.fragment.DetailRestaurantFragment">
+
+    <LinearLayout
+        android:id="@+id/detail_resto_button_bar"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:gravity="right|center"
+        android:background="@color/dark_primary_color">
+
+        <ImageButton
+            android:id="@+id/detail_resto_add_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_box_black_24dp"/>
+
+        <ImageButton
+            android:id="@+id/detail_resto_edit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_edit_black_24dp"/>
+
+        <ImageButton
+            android:id="@+id/detail_resto_delete_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_delete_black_24dp"/>
+
+        <ImageButton
+            android:id="@+id/detail_resto_add_contact_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_person_add_black_24dp"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/detail_resto_button_bar">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top">
+
+            <TextView
+                android:id="@+id/detail_resto_nom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="@string/test"
+                android:background="@color/accent_color"
+                android:textColor="@color/text_icons"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detail_resto_date_ajout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="10dp"
+                android:text="@string/detail_resto_date_ajout" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="@string/detail_resto_label_adresse" />
+
+                <TextView
+                    android:id="@+id/detail_resto_adresse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="@string/test" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="end">
+
+                <Button
+                    android:id="@+id/detail_resto_maps_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_map_black_24dp"
+                    android:drawableLeft="@drawable/ic_map_black_24dp"
+                    android:text="@string/button_maps"/>
+
+                <Button
+                    android:id="@+id/detail_resto_street_view_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_location_on_black_24dp"
+                    android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                    android:text="@string/button_street_view"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/detail_resto_label_telephone"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/detail_resto_telephone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/test"
+                    android:textSize="16sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end">
+
+                    <ImageButton
+                        android:id="@+id/detail_resto_call_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_call_black_24dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/detail_resto_label_site_web"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/detail_resto_site_web"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="@string/test"
+                    android:textColor="@color/wallet_holo_blue_light" />
+            </LinearLayout>
+
+            <RatingBar
+                android:id="@+id/detail_resto_note_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:numStars="5" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/detail_resto_label_commentaire"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/detail_resto_commentaire"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/test"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/detail_resto_label_photo"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+                <ImageView
+                    android:id="@+id/detail_resto_photo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="20dp"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="end">
+
+                <Button
+                    android:id="@+id/detail_resto_new_photo_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_photo_camera_black_24dp"
+                    android:drawableLeft="@drawable/ic_photo_camera_black_24dp"
+                    android:text="@string/button_new_photo"/>
+
+                <Button
+                    android:id="@+id/detail_resto_replace_photo_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_photo_camera_black_24dp"
+                    android:drawableLeft="@drawable/ic_photo_camera_black_24dp"
+                    android:text="@string/button_replace_photo"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

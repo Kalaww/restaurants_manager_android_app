@@ -1,0 +1,139 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ced.restobook.fragment.EditRestaurantFragment">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:layout_gravity="center_horizontal|bottom">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="@string/detail_resto_label_nom" />
+
+            <EditText
+                android:id="@+id/edit_resto_nom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="@string/detail_resto_label_adresse" />
+
+            <EditText
+                android:id="@+id/edit_resto_adresse"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="@string/detail_resto_label_telephone"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/edit_resto_telephone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:ems="10" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="@string/detail_resto_label_site_web"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/edit_resto_siteweb"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="@string/detail_resto_label_commentaire"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/edit_resto_commentaire"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <RatingBar
+            android:id="@+id/edit_resto_note_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/edit_resto_submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Valider" />
+
+    </LinearLayout>
+
+</FrameLayout>
